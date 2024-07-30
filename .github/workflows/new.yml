@@ -1,0 +1,10 @@
+name: first
+on: 
+    workflow_dispatch:
+
+jobs:
+    new_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name : hello 
+              run: echo "this is first time i am running"
