@@ -1,11 +1,13 @@
-name: first_workflow
+name: Hello World Workflow
 
-on: 
+# Trigger the workflow manually using workflow_dispatch
+on:
   workflow_dispatch:
 
 jobs:
-  say-hello:
-    runs-on: ubuntu_latest
+  say_hello:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: firstworkflow 
-        run:  echo "hello first workflow"
+      - name: Echo Hello
+        run: echo "Hello, World!"
